@@ -57,6 +57,12 @@ h2 {
   transform: scale(1.5);
 }
 
+.custom-besleyFont {
+  font-family: "Besley", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /**Styling scrollable elements*/
 
@@ -70,7 +76,7 @@ h2 {
 }
 
 .scrolled.fade-in {
-  animation: fade-in .7s ease-in-out both;
+  animation: fade-in .9s ease-in-out both;
 }
 
 .scrolled.fade-in-bottom {

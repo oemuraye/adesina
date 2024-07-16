@@ -1,5 +1,7 @@
 footer {
     position: relative;
+    max-width: 1310px;
+    margin: 0 auto;
 }
 footer::before {
     content: '';
@@ -20,6 +22,7 @@ footer::before {
     border-radius: 0;
     border-bottom: 1px solid var(--basic-white);
     background-color: var(--basic-dark);
+    padding: 4px 0px;
 }
 .footer-contact input::placeholder {
     color: var(--grey-color);

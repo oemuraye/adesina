@@ -1,0 +1,56 @@
+.home_page-section {
+    /* max-width: 1310px; */
+    /* margin: 0 auto; */
+}
+.home_page-section .hero {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-x;
+    position: relative;
+    background-image: url(../../utils/images/hero.png);
+    height: 550px;
+    /* width: 100%; */
+}
+.home_page-section .hero h1 {
+    color: var(--basic-white);
+    font-family: "Besley", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(3rem, 4vw + 1rem, 4rem);
+}
+.home_page-section .hero-text {
+    max-width: 1310px;
+    margin: 0 auto;
+}
+.home_page-section .hero-text div {
+    position: absolute;
+    bottom: 40px;
+}
+
+.home_page-section .brand_info-section {
+    max-width: 1310px;
+    margin: 0 auto;
+    color: var(--basic_text-white);
+    /* font-size: 22px; */
+}
+.home_page-section .brand_info-section h4 {
+    font-size: 18px;
+    
+}
+.home_page-section .brand_info-section h3 {
+    font-family: "Besley", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.home_page-section .brand_info-section h1 {
+    font-family: "Besley", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.home_page-section .brand_info-section .fa-plus {
+    font-size: 16px;
+}
