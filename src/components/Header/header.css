@@ -1,0 +1,46 @@
+.navbar-default-color {
+    background-color: #eaeaea00;
+}
+.navbar-default-color .navbar-expand-md {
+    background-color: #eaeaea00;
+}
+  
+.navbar-color-onscroll {
+    background-color: var(--dark-color);
+}
+.navbar-color-onscroll .navbar-expand-md {
+    background-color: var(--dark-color);
+}
+  
+.navbar {
+    transition: background-color 1s ease;
+    z-index: 100;
+}
+  
+.nav-link {
+    color: var(--basic-white) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-weight: 500;
+}
+.nav-link.active {
+    color: var(--basic-white) !important;
+    position: relative;
+    border-bottom: 1px solid var(--basic-white);
+}
+  
+.nav-link:hover {
+    border-bottom: 3px solid var(--basic-color);
+}
+  
+.navbar-expand-md .navbar-collapse {
+    flex-grow: 0;
+}
+.navbar-toggler-icon {
+    background-image: url(../../utils/images/menu\ toggler.png) !important;
+}
+.navbar-toggler {
+    color: transparent !important;
+    border: none !important;
+}
