@@ -1,0 +1,49 @@
+footer {
+    position: relative;
+}
+footer::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    width: 98.5%;
+    border-top: 1px solid var(--charcoal-color);
+}
+
+.footer-contact form {
+    max-width: 400px;
+}
+
+.footer-contact input.form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--basic-white);
+    background-color: var(--basic-dark);
+}
+.footer-contact input::placeholder {
+    color: var(--grey-color);
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-weight: 500;
+}
+.footer-contact button {
+    background-color: var(--basic-dark);
+    border: 1px solid var(--grey-color);
+    border-radius: 50px;
+    color: var(--basic-white);
+    padding: 1px 15px;
+}
+.footer-contact button:hover {
+    scale: 0.98;
+}
+.footer-links a:hover {
+    color: var(--grey-color);
+}
+.footer-links ul li {
+    margin-bottom: 7px;
+}
+footer .social-links a {
+    border: 1px solid var(--basic-white);    
+    border-radius: 100%;
+    padding: 4px 10px;
+}
