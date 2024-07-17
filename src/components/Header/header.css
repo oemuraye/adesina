@@ -15,7 +15,6 @@
 .navbar {
     transition: background-color 1s ease;
     z-index: 100;
-    margin-bottom: -75px;
 }
 .navbar nav {
     max-width: 1310px;

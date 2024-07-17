@@ -22,6 +22,7 @@
   --basic-white: #fff;
   --charcoal-color: #3F3F3F;
   --grey-color: #999999;
+  --bg_grey-color: #E6E7E8;
 }
 
 body {
@@ -29,7 +30,42 @@ body {
   background-color: var(--dark-color);
 }
 
-
+.custom-besleyFont {
+  font-family: "Besley", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.custom-neueFont_500Weight {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.custom-neueFont_400Weight {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.custom-neueFont_Bold {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  font-optical-sizing: auto;
+  font-style: bold;
+}
+.customBtn {
+  background-color: var(--basic-dark);
+  border: 1px solid var(--grey-color);
+  border-radius: 50px;
+  color: var(--basic-white);
+  padding: 1px 15px;
+  font-family: 'Neue Haas Grotesk Display Pro';
+  font-weight: 500;
+  font-style: normal;
+}
+.customBtn:hover {
+  scale: 0.98;
+}
 
 textarea:focus,
 input:focus {
@@ -42,6 +78,15 @@ a {
   text-decoration: none;
   color: #fff;
 }
+h1 {
+  color: var(--basic-white);
+  font-family: "Besley", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(3rem, 4vw + 1rem, 4rem);
+}
+
 h2 {
   font-family: "Besley", serif;
   font-optical-sizing: auto;
@@ -49,19 +94,15 @@ h2 {
   font-style: normal;
 }
 
+.imgHover_effect {
+  overflow: hidden;
+}
 .imgHover_effect img {
-  transition: transform .7s ease;
+  transition: transform 1s ease;
 }
 
 .imgHover_effect img:hover {
-  transform: scale(1.5);
-}
-
-.custom-besleyFont {
-  font-family: "Besley", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  transform: scale(1.2);
 }
 
 /**Styling scrollable elements*/

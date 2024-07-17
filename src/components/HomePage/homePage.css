@@ -1,7 +1,10 @@
 .home_page-section {
+    margin-top: -75px;
     /* max-width: 1310px; */
     /* margin: 0 auto; */
 }
+
+/* Hero Section */
 .home_page-section .hero {
     background-size: cover;
     background-attachment: fixed;
@@ -12,14 +15,6 @@
     height: 550px;
     /* width: 100%; */
 }
-.home_page-section .hero h1 {
-    color: var(--basic-white);
-    font-family: "Besley", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: clamp(3rem, 4vw + 1rem, 4rem);
-}
 .home_page-section .hero-text {
     max-width: 1310px;
     margin: 0 auto;
@@ -29,6 +24,11 @@
     bottom: 40px;
 }
 
+/* Brand Info Section */
+
+.home_page-section .brand_info-section article {
+    max-width: 450px;
+}
 .home_page-section .brand_info-section {
     max-width: 1310px;
     margin: 0 auto;
@@ -54,3 +54,15 @@
 .home_page-section .brand_info-section .fa-plus {
     font-size: 16px;
 }
+
+
+/* Testimony ection */
+.home_page-section .testimony-section {
+    background-color: var(--bg_grey-color);
+}
+.home_page-section .testimony-section p {
+    
+}
+.home_page-section .testimony-section h4  {}
+
+

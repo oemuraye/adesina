@@ -1,6 +1,10 @@
 import { useEffect } from 'react';
 
-const useScrollAnimation = (className = 'js-scroll', scrolledClass = 'scrolled') => {
+const useScrollAnimation = (
+  className = 'js-scroll',
+  scrolledClass = 'scrolled',
+  onElementInView = null
+) => {
   useEffect(() => {
     const scrollElements = document.querySelectorAll(`.${className}`);
 
@@ -21,6 +25,9 @@ const useScrollAnimation = (className = 'js-scroll', scrolledClass = 'scrolled')
 
     const displayScrollElement = (element) => {
       element.classList.add(scrolledClass);
+      if (onElementInView) {
+        onElementInView(element);
+      }
     };
 
     const hideScrollElement = (element) => {
@@ -46,7 +53,7 @@ const useScrollAnimation = (className = 'js-scroll', scrolledClass = 'scrolled')
     return () => {
       window.removeEventListener('scroll', handleScrollAnimation);
     };
-  }, [className, scrolledClass]);
+  }, [className, scrolledClass, onElementInView]);
 };
 
 export default useScrollAnimation;
