@@ -1,0 +1,32 @@
+
+.news-item {
+    position: relative;
+}
+.image-shade {
+    position: absolute;
+    bottom: 0;
+}
+.news-item .news-details {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .4;
+    background: #000000; 
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 48.5%, #000000 100%);
+
+}
+.imgHover_effect .overlay {
+    transition: transform 1s ease;
+}
+  
+.imgHover_effect .overlay:hover {
+    transform: scale(1.2);
+}
