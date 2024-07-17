@@ -1,19 +1,19 @@
 import useScrollAnimation from '../../hooks/useScrollAnimation';
 
-import newsImg from '../../utils/images/blogImg1.png';
-import newsImgShade from '../../utils/images/imageShade.png';
+import newsImg1 from '../../utils/images/blogImg1.png';
+import newsImg2 from '../../utils/images/blogImg2.png';
 
 import './blog.css';
 
 const Blog = () => {
   const blogNewsDetails = [
-    { title: 'Real estate wealth for investors', date: 'July 12, 2024', displayImg: newsImg },
-    { title: 'Real estate wealth for investors', date: 'July 12, 2024', displayImg: newsImg },
-    { title: 'Real estate wealth for investors', date: 'July 12, 2024', displayImg: newsImg },
-    { title: 'Real estate wealth for investors', date: 'July 12, 2024', displayImg: newsImg },
-    { title: 'Real estate wealth for investors', date: 'July 12, 2024', displayImg: newsImg },
-    { title: 'Real estate wealth for investors', date: 'July 12, 2024', displayImg: newsImg },
-];
+      { title: 'Real estate wealth for investors', date: 'July 12, 2024', displayImg: newsImg1 },
+      { title: 'How to deal with bad debts', date: 'July 12, 2024', displayImg: newsImg2 },
+      { title: 'Real estate wealth for investors', date: 'July 12, 2024', displayImg: newsImg1 },
+      { title: 'Real estate wealth for investors', date: 'July 12, 2024', displayImg: newsImg2 },
+      { title: 'Real estate wealth for investors', date: 'July 12, 2024', displayImg: newsImg1 },
+      { title: 'Real estate wealth for investors', date: 'July 12, 2024', displayImg: newsImg2 },
+  ];
   useScrollAnimation();
 
   return (
@@ -24,11 +24,11 @@ const Blog = () => {
       <section className="row blog-news my-5 js-scroll fade-in">
         {blogNewsDetails.map((detail, index) => (
           <div key={index} className="col-md-4 col-sm-12 my-md-5 my-2">
-            <div className='imgHover_effect news-item'>
-              <div class="overlay"></div>
-              <img src={detail.displayImg} alt="newsImg" className='img-fluid' />
+            <div className="imgHover_effect news-item">
+              <img src={detail.displayImg} alt="newsImg" className="img-fluid" />
+              <div className="overlay"></div>
               <div className="news-details">
-                <h4 className='custom-besleyFont mb-0'>{detail.title}</h4>
+                <h4 className="custom-besleyFont mb-0">{detail.title}</h4>
                 <p>{detail.date}</p>
               </div>
             </div>

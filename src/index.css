@@ -28,6 +28,12 @@
 body {
   /* font-family: 'Neue Haas Grotesk Display Pro', sans-serif; */
   background-color: var(--dark-color);
+  transition: transform 1s ease;
+}
+
+.app {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .page-width {
   color: var(--basic-white);
@@ -66,9 +72,10 @@ body {
   font-family: 'Neue Haas Grotesk Display Pro';
   font-weight: 500;
   font-style: normal;
+  transition: transform 1s ease;
 }
 .customBtn:hover {
-  scale: 0.98;
+  transform: scale(1.01);
 }
 
 textarea:focus,
@@ -183,10 +190,4 @@ h2 {
   100% {
     opacity: 1;
   }
-}
-
-
-.app {
-  max-width: 1440px;
-  margin: 0 auto;
 }

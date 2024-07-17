@@ -23,6 +23,7 @@ footer::before {
     border-bottom: 1px solid var(--basic-white);
     background-color: var(--basic-dark);
     padding: 4px 0px;
+    color: var(--basic-white);
 }
 .footer-contact input::placeholder {
     color: var(--grey-color);
@@ -35,6 +36,7 @@ footer::before {
     border-radius: 50px;
     color: var(--basic-white);
     padding: 1px 15px;
+    
 }
 .footer-contact button:hover {
     scale: 0.98;

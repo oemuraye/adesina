@@ -1,0 +1,17 @@
+.contact_form-section {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.contact_form-section input.form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--basic-white);
+    background-color: var(--basic-dark);
+    padding: 4px 0px;
+    color: var(--basic-white);
+}
+.contact_form-section input::placeholder {
+    color: var(--grey-color);
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-weight: 500;
+}
