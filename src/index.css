@@ -29,7 +29,11 @@ body {
   /* font-family: 'Neue Haas Grotesk Display Pro', sans-serif; */
   background-color: var(--dark-color);
 }
-
+.page-width {
+  color: var(--basic-white);
+  max-width: 1310px;
+  margin: 0 auto;
+}
 .custom-besleyFont {
   font-family: "Besley", serif;
   font-optical-sizing: auto;

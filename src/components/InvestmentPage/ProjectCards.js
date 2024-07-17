@@ -8,7 +8,7 @@ const ProjectCards = ({ title, numOfUnits, description, amount, address, projImg
         <hr />
 
         <section className='row mt-5'>
-          <div className="col-md-5 col-sm-12 my-3">
+          <div className="col-md-5 col-sm-12 my-3 js-scroll slide-left">
             <div className="d-flex align-items-center gap-4">
               <h3 className='mb-0 custom-besleyFont'>{title}</h3>
               <Link className='customBtn'>View Project</Link>
@@ -26,7 +26,7 @@ const ProjectCards = ({ title, numOfUnits, description, amount, address, projImg
             </div>
             
           </div>
-          <div className="col-md-7 col-sm-12 my-3">
+          <div className="col-md-7 col-sm-12 my-3 js-scroll slide-right">
             <div className="imgHover_effect">
               <img src={projImg} alt="img" className='img-fluid' />
             </div>

@@ -1,9 +1,0 @@
-.investment-section {
-    color: var(--basic-white);
-    max-width: 1310px;
-    margin: 0 auto;
-}
-
-.investment-section .invest-img {
-    overflow: hidden;
-}

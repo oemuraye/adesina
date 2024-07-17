@@ -29,7 +29,7 @@ const TestimonySection = () => {
       <div className="carousel-inner">
         {testimonies.map((testimony, index) => (
             <div key={index} className={`carousel-item ${index === currentIndex ? 'active' : ''}`}>
-              <i class="fa-solid fa-quote-left mb-4"></i>
+              <i className="fa-solid fa-quote-left mb-4"></i>
               <div className='ps-3'>
                 <p className=''>{testimony.text}</p>
                 <h4 className='custom-besleyFont'>{testimony.author}</h4>

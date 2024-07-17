@@ -5,6 +5,8 @@ import Header from './components/Header/Header';
 import useScrollAnimation from './hooks/useScrollAnimation';
 import HomePage from './components/HomePage/HomePage';
 import Investments from './components/InvestmentPage/Investments';
+import About from './components/AboutPage/About';
+import Blog from './components/Blog/Blog';
 
 const App = () => {
   useScrollAnimation();
@@ -16,6 +18,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={ <HomePage /> } />
           <Route path="/investments" element={ <Investments /> } />
+          <Route path="/about" element={ <About /> } />
+          <Route path="/blog" element={ <Blog /> } />
         </Routes>
 
      <Footer />
