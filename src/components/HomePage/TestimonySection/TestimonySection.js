@@ -4,9 +4,12 @@ import arrowRight from '../../../utils/icons/arrow right.png';
 import arrowLeft from '../../../utils/icons/arrow left.png';
 
 const testimonies = [
-    { text: "Als u een huis wil bouwen, kan u naar iedere architect stappen. Wanneer u een ‘thuis’ wil laten ontwerpen, bevelen we BEO Architecten van harte aan. De afgelopen twee jaar zijn we met het team van BEO Architecten in het intensieve avontuur van onze nieuwbouw gestapt. Tom en zijn team gaan tot het uiterste in de begeleiding van hun.", author: "Daniel James" },
-    { text: "Als u een huis wil bouwen, kan u naar iedere architect stappen. Wanneer u een ‘thuis’ wil laten ontwerpen, bevelen we BEO Architecten van harte aan. De afgelopen twee jaar zijn we met het team van BEO Architecten in het intensieve avontuur van onze nieuwbouw gestapt. Tom en zijn team gaan tot het uiterste in de begeleiding van hun.", author: "Daniel James" },
-    { text: "Als u een huis wil bouwen, kan u naar iedere architect stappen. Wanneer u een ‘thuis’ wil laten ontwerpen, bevelen we BEO Architecten van harte aan. De afgelopen twee jaar zijn we met het team van BEO Architecten in het intensieve avontuur van onze nieuwbouw gestapt. Tom en zijn team gaan tot het uiterste in de begeleiding van hun.", author: "Daniel James" },
+    { author: "Emmanuel", location: 'Lagos, Nigeria', text: "I won't have made some bad investments if I had known what I know now with Adesina. Your investments are also very clear and easy, especially with the installment plan. Others will increase by maybe 20% if you're paying installments. I believe if we continue like this, In 10years, I'll be a big man effortlessly." },
+    { author: "Psalm", location: 'Abuja, Nigeria', text: "After receiving our monthly Cashflow for June, I told my wife we need to invest more with Adesina. I'm just patient with my business so I can pay more attention to investing for passive income." },
+    { author: "Favour", location: 'Ontario, Canada', text: "The way you Adesina presents investments is so honest and revealing. There's no pressure or time bound steal offers. They don't sell to you, they counsel and guide you to make the best decision for yourself and even if you come back to review your choices, they have a friendly way of reviewing your investment to meet your needs. It's like they work for you." },
+    { author: "John", location: 'Poland', text: "Anything Adesina says I should buy, I buy without thinking twice. Though a young team, but their experience and depth of knowledge is so rich. I trust them wholeheartedly and I tell the founder this all the time." },
+    { author: "Oke", location: 'Dubai, UAE', text: "I've been following Adesina on Facebook for months before I decided to make investment enquiries. From the insights from the Chief Investment Officer, I knew they were not just trying to make commission but to actually help people invest. When they say real estate for true investors, believe me, it is." },
+    // { author: "", location: '', text: "" },
 ];
 
 const TestimonySection = () => {
@@ -32,7 +35,8 @@ const TestimonySection = () => {
               <i className="fa-solid fa-quote-left mb-4"></i>
               <div className='ps-3'>
                 <p className=''>{testimony.text}</p>
-                <h4 className='custom-besleyFont'>{testimony.author}</h4>
+                <h4 className='custom-besleyFont mb-0'>{testimony.author}</h4>
+                <h5 className='custom-besleyFont'>{testimony.location}</h5>
               </div>
             </div>
           ))}

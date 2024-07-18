@@ -1,8 +1,10 @@
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 import './contactForm.css';
 
 const ContactForm = () => {
+  useScrollAnimation();
   return (
-    <section className='contact_form-section'>
+    <section className='contact_form-section js-scroll fade-in'>
       <h3 className='custom-besleyFont text-white text-center'>Contact form</h3>
       
       <form className="d-flex flex-column gap-4 mt-4 p-1">

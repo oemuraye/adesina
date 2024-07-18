@@ -42,7 +42,7 @@ const Header = () => {
                 <Link to="/" className={`nav-link pb-0 ${location.pathname === "/" ? "active" : ""}`} aria-current="page">Home</Link>
               </li>
               <li className="nav-item">
-                <Link to="/investments" className={`nav-link pb-0 ${location.pathname === "/investments" ? "active" : ""}`}>Investments</Link>
+                <Link to="/investments" className={`nav-link pb-0 ${location.pathname === "/investments" || location.pathname === '/investment_details' ? "active" : ""}`}>Investments</Link>
               </li>
               <li className="nav-item">
                 <Link to="/about" className={`nav-link pb-0 ${location.pathname === "/about" ? "active" : ""}`}>About</Link>

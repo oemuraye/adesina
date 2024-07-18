@@ -1,0 +1,6 @@
+.property_details-section a {
+    transition: transform 1s ease;
+}
+.property_details-section a:hover {
+    transform: scale(0.98);
+}

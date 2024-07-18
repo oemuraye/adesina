@@ -24,7 +24,7 @@ const Footer = () => {
                     <div className='row col-md-8 col-sm-12'>
                         <div className='col-6'>
                             <h4>Office Address</h4>
-                            <Link target='_blank' to='https://www.google.com/maps/search/?'>Sales Gallery 53 <br /> West 53rd Street <br /> NY 10019</Link>
+                            <Link target='_blank' to='https://www.google.com/maps/search/?'>4th Floor, Tower C, <br /> Churchgate Plaza, <br /> Central Business <br /> District, Abuja, Nigeria</Link>
                         </div>
                         <ul className='col-6'>
                             <li><h4>Contact us</h4></li>

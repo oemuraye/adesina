@@ -7,8 +7,8 @@ import ProjectCards from './ProjectCards';
 const Investments = () => {
   useScrollAnimation();
   const projectCardDetails = [
-    { title: 'A20', numOfUnits: '20', description: '1.5X - 3X Target Returns (3yrs)', amount: '10', address: 'Lugbe, Abuja Nigeria.', projImg: projectImg1 },
-    { title: 'A20', numOfUnits: '20', description: '1.5X - 3X Target Returns (3yrs)', amount: '10', address: 'Lugbe, Abuja Nigeria.', projImg: projectImg1 }
+    { title: 'A20', numOfUnits: '20', description: '1.5X - 3X', years: '3', amount: '10', address: 'Lugbe, Abuja Nigeria.', projImg: projectImg1, projectStatus: 'open'},
+    { title: 'A20', numOfUnits: '20', description: '1.5X - 3X', years: '3', amount: '10', address: 'Lugbe, Abuja Nigeria.', projImg: projectImg1, projectStatus: 'closed'}
   ]
   return (
     <main className='page-width investment-section container-fluid my-5 pb-5'>
@@ -17,14 +17,7 @@ const Investments = () => {
 
       {projectCardDetails.map((details, index) => (
         <section key={index}>
-          <ProjectCards 
-            title={details.title}
-            numOfUnits={details.numOfUnits}
-            description={details.description}
-            amount={details.amount}
-            address={details.address}
-            projImg={details.projImg}
-          />
+          <ProjectCards details={details} />
         </section>
       ))}
     </main>

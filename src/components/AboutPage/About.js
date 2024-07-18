@@ -1,7 +1,9 @@
 import useScrollAnimation from "../../hooks/useScrollAnimation";
 import aboutInfoImg from "../../utils/images/about info img.png";
 
-import memberPics from '../../utils/images/Portrait_business man.png'
+import memberPics1 from '../../utils/images/Opeyemi Edited.png'
+import memberPics2 from '../../utils/images/Blessing.png'
+import memberPics3 from '../../utils/images/Aminat.png'
 
 import './about.css';
 
@@ -15,9 +17,9 @@ const About = () => {
     ];
 
     const teamMembers = [
-        { name: 'Opeyemi Adesina', role: 'Founder / Chief Investment Officer', profilePic: memberPics },
-        { name: 'Blessing Atanda', role: 'Senior Investment Associate', profilePic: memberPics },
-        { name: 'Aminat Kazeem', role: 'Investment Associate', profilePic: memberPics },
+        { name: 'Opeyemi Adesina', role: 'Founder / Chief Investment Officer', profilePic: memberPics1 },
+        { name: 'Blessing Atanda', role: 'Senior Investment Associate', profilePic: memberPics2 },
+        { name: 'Aminat Kazeem', role: 'Investment Associate', profilePic: memberPics3 },
     ];
 
 
@@ -28,7 +30,7 @@ const About = () => {
             <div className="about-heading custom-besleyFont js-scroll slide-left">
                 <h4>Driven by the AfriProsperity philosophy, Adesina is on a mission to contribute $1B in Infrastructure Development across Africa by 2030, by co-investing in strategic opportunities for collective wealth.</h4>
             </div>
-            <div className="js-scroll slide-right imgHover_effect img-fluid"><img src={aboutInfoImg} alt="projImg" /></div>
+            <div className="js-scroll fade-in imgHover_effect img-fluid"><img src={aboutInfoImg} alt="projImg" /></div>
         </section>
 
         <section className='row values-section mt-5'>
@@ -60,11 +62,11 @@ const About = () => {
             </div>
 
             <div className="row p-2 my-4">
-                <div className="col-md-2 col-sm-12"></div>
-                <div className="col-md-10 col-sm-12">
-                    <div className="row gap-4 team-members">
+                <div className="col-md-3 col-sm-12"></div>
+                <div className="col-md-9 col-sm-12">
+                    <div className="row team-members">
                         {teamMembers.map((detail, index) => (
-                            <div key={index} className="col-md-3 col-sm-12 d-flex flex-column gap-1">
+                            <div key={index} className="col-md-6 col-sm-12 d-flex flex-column gap-1">
                                 <img src={detail.profilePic} alt="" className="img-fluid" width='' />
                                 <h5 className="custom-besleyFont mb-0">{detail.name}</h5>
                                 <p>{detail.role}</p>

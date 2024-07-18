@@ -42,7 +42,7 @@
     flex-grow: 0;
 }
 .navbar-toggler-icon {
-    background-image: url(../../utils/images/menu\ toggler.png) !important;
+    background-image: url(../../utils/icons/menu\ toggler.png) !important;
 }
 .navbar-toggler {
     color: transparent !important;
