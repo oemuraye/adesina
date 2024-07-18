@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 
+import heroVideo from '../../utils/video/IMG_3003.mov';
+import heroImg from '../../utils/images/hero.png';
 
 import './homePage.css';
 import CountUpAnimation from './CountUpAnimation';
@@ -19,6 +21,11 @@ const HomePage = () => {
   return (
     <main className='home_page-section'>
         <section className="hero">
+            <video autoPlay muted loop className="hero-video">
+                <source src={heroVideo} type="video/mp4" />
+                <img src={heroImg} alt="Background-image" className="hero-bg-image" />
+                Your browser does not support the video tag.
+            </video>
             <div className='hero-text'>
                 <div className="d-flex flex-column gap-3">
                     <h1 className="js-scroll fade-in">Real Estate For</h1>

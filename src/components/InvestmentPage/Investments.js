@@ -24,7 +24,7 @@ const Investments = () => {
   return (
     <main className='page-width investment-section container-fluid my-5 pb-5'>
 
-      <h1 className='mb-4'>Investments</h1>
+      <h1 className='mb-4 pt-4'>Investments</h1>
 
       {projectCardDetails.map((details, index) => (
         <section key={index}>

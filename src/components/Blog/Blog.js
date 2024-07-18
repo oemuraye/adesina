@@ -25,7 +25,7 @@ const Blog = () => {
   return (
     <main className='page-width blog-section container-fluid my-5 pb-5'>
 
-      <h1 className='mb-4'>Recent news</h1>
+      <h1 className='mb-4 pt-4'>Recent news</h1>
 
       <section className="row blog-news my-5 js-scroll fade-in">
         {blogNewsDetails.map((detail, index) => (

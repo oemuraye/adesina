@@ -25,7 +25,7 @@ const InvestmentDetails = () => {
   return (
     <section className='page-width container-fluid pb-5 my-5'>
         <section className="d-flex gap-3 align-items-center">
-            <h1>{details.title}</h1>
+            <h1 className='mb-4 pt-4'>{details.title}</h1>
             <div className="d-flex align-items-center gap-2">
               <img src={locationPin} alt="icon" width='20px' height='25px' />
               <Link target='_blank' to='https://www.google.com/maps/search/?'>{details.address}</Link>

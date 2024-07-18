@@ -8,7 +8,7 @@ const Contact = () => {
     <section className='contact_page-section pb-5 my-5'>
         <section className="hero">
             <div className="hero-text container-fluid">
-                <h1 className=''>Get in touch</h1>
+                <h1 className='mb-4 pt-4'>Get in touch</h1>
             </div>
         </section>
 
