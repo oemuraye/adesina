@@ -28,7 +28,7 @@ const InvestmentDetails = () => {
             <h1>{details.title}</h1>
             <div className="d-flex align-items-center gap-2">
               <img src={locationPin} alt="icon" width='20px' height='25px' />
-              <Link target='_blank' to='https://www.google.com/maps/search/?'>Lugbe, Abuja Nigeria.</Link>
+              <Link target='_blank' to='https://www.google.com/maps/search/?'>{details.address}</Link>
             </div>
         </section>
 
@@ -39,11 +39,11 @@ const InvestmentDetails = () => {
                 <div className="col-md-3 col-sm-12 js-scroll slide-left">
                     <div className="d-flex flex-column">
                         <h4 className='mb-0'>MINIMUM INVESTMENT</h4>
-                        <p className='mb-0'>₦10,000,000/300sqm</p>
+                        <p className='mb-0'>₦{details.amount}</p>
                     </div>
                     <div className="d-flex flex-column my-4">
                         <h4 className='mb-0'>TARGET RETURNS</h4>
-                        <p className='mb-0'>2X-3.5X (3 Years)</p>
+                        <p className='mb-0'>{details.description} ({details.year} Years)</p>
                     </div>
                     <span role='button' onClick={(e) => handleScroll(e, 'contact-form')} className='customBtn py-1 px-4'>Invest</span>
                 </div>

@@ -36,3 +36,8 @@
 .imgHover_effect:hover .overlay {
     transform: scale(1);
 }
+
+.blog_details-section .imgHover_effect img {
+    max-height: 450px;
+    object-fit: cover;
+}

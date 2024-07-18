@@ -67,14 +67,16 @@ body {
 }
 .customBtn {
   background-color: var(--basic-dark);
-  border: 1px solid var(--grey-color);
+  outline: 1px solid var(--grey-color);
   border-radius: 50px;
   color: var(--basic-white);
-  padding: 1px 15px;
+  padding: 7px 15px;
   font-family: 'Neue Haas Grotesk Display Pro';
   font-weight: 500;
   font-style: normal;
-  transition: transform 1s ease;
+  transition: background-color 1.3s ease, outline 0.7s ease-in-out;
+  animation-timing-function: ease-in;
+  animation-duration: 40000ms;
 }
 .customBtn-circle {
   background-color: var(--basic-dark);
@@ -85,10 +87,17 @@ body {
   font-family: 'Neue Haas Grotesk Display Pro';
   font-weight: 500;
   font-style: normal;
-  transition: transform 1s ease;
+  transition: background-color 2.3s ease-in-out, outline 2.3s ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-duration: 40000ms;
+}
+.customBtn-closed {
+  border-color: transparent;
+  background-color: var(--charcoal-color);
 }
 .customBtn:hover {
-  transform: scale(1.01);
+  background-color: var(--charcoal-color);
+  outline: none;
 }
 .customBtn-circle:hover {
   transform: scale(1.01);

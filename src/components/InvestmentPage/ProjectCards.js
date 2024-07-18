@@ -20,25 +20,26 @@ const ProjectCards = ({ details }) => {
               {details.projectStatus === 'open' ? (
                 <span role='button' onClick={goToProjectDetails} className='customBtn'>View Project</span>
               ): (
-                <span className='customBtn'>Closed</span>
+                <span className='customBtn customBtn-closed'>Closed</span>
               )}
             </div>
 
-            <div className="d-flex flex-column gap-1 my-4">
-              <p className='mb-0'>{details.numOfUnits} Units</p>
-              <p className='mb-0'>{details.description} Target Returns ({details.years}yrs)</p>
-              <p className='mb-0'>Minimum Investment: ₦{details.amount}M</p>
+            <div className="d-flex flex-column gap-4 my-4">
+              <p className='mb-0'>{details.numOfUnits}</p>
+              {details.annualCashFlow !== '' && (<p className='mb-0'>{details.annualCashFlow}% Annual Cashflow</p>)}
+              <p className='mb-0'>{details.description} Target Returns ({details.years}years)</p>
+              <p className='mb-0'>Minimum Investment: ₦{details.amount}</p>
             </div>
 
             <div className="d-flex align-items-center gap-2">
-              <img src={locationPin} alt="icon" width='24px' height='29px' />
+              <img src={locationPin} alt="icon" width='20px' height='25px' />
               <Link target='_blank' to='https://www.google.com/maps/search/?'>{details.address}</Link>
             </div>
             
           </div>
           <div className="col-md-7 col-sm-12 my-3 js-scroll slide-right">
             <div className="imgHover_effect">
-              <img src={details.projImg} alt="img" className='img-fluid' />
+              <img src={details.projImg} alt="img" className='img-fluid' height='515px' />
             </div>
           </div>
         </section>

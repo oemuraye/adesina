@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 import newsImg1 from '../../utils/images/blogImg1.png';
@@ -15,6 +16,11 @@ const Blog = () => {
       { title: 'Real estate wealth for investors', date: 'July 12, 2024', displayImg: newsImg2 },
   ];
   useScrollAnimation();
+  const navigate = useNavigate();
+
+  const goToBlogDetails = (details) => {
+    navigate('/blog_details', { state: { details } })
+  }
 
   return (
     <main className='page-width blog-section container-fluid my-5 pb-5'>
@@ -23,7 +29,7 @@ const Blog = () => {
 
       <section className="row blog-news my-5 js-scroll fade-in">
         {blogNewsDetails.map((detail, index) => (
-          <div key={index} className="col-md-4 col-sm-12 my-md-5 my-2">
+          <div role='button' onClick={() => goToBlogDetails(detail)} key={index} className="col-md-4 col-sm-12 my-md-5 my-2">
             <div className="imgHover_effect news-item">
               <img src={detail.displayImg} alt="newsImg" className="img-fluid" />
               <div className="overlay"></div>

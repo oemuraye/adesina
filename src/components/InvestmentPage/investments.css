@@ -1,6 +1,13 @@
 .property_details-section a {
-    transition: transform 1s ease;
+    transition: transform 1s ease-in-out;
 }
 .property_details-section a:hover {
     transform: scale(0.98);
+}
+/* .property_details-section .imgHover_effect img {
+    height: 624px;
+} */
+
+.investment-section .imgHover_effect img {
+    height: 515px;
 }

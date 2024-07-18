@@ -9,6 +9,7 @@ import About from './components/AboutPage/About';
 import Blog from './components/Blog/Blog';
 import Contact from './components/ContactPage/Contact';
 import InvestmentDetails from './components/InvestmentPage/InvestmentDetails';
+import BlogDetails from './components/Blog/BlogDetails';
 
 const App = () => {
   useScrollAnimation();
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/blog" element={ <Blog /> } />
           <Route path="/contact" element={ <Contact /> } />
           <Route path="/investment_details" element={ <InvestmentDetails /> } />
+          <Route path="/blog_details" element={ <BlogDetails /> } />
         </Routes>
 
      <Footer />
