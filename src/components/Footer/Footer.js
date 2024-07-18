@@ -15,7 +15,7 @@ const Footer = () => {
                 <h2>Get in touch with us</h2>
                 <form className="d-flex gap-3 mt-4">
                     <input className='form-control' type="email" name="email" placeholder='Enter your email' id="email" />
-                    <button>Submit</button>
+                    <button className='customBtn'>Submit</button>
                 </form>
             </div>
             

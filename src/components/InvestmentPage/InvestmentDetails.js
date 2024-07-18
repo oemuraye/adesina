@@ -38,14 +38,14 @@ const InvestmentDetails = () => {
             <div className="row my-5">
                 <div className="col-md-3 col-sm-12 js-scroll slide-left">
                     <div className="d-flex flex-column">
-                        <h4 className='mb-0'>MINIMUM INVESTMENT</h4>
+                        <h4 className='mb-1'>MINIMUM INVESTMENT</h4>
                         <p className='mb-0'>₦{details.amount}</p>
                     </div>
                     <div className="d-flex flex-column my-4">
-                        <h4 className='mb-0'>TARGET RETURNS</h4>
+                        <h4 className='mb-1'>TARGET RETURNS</h4>
                         <p className='mb-0'>{details.description} ({details.year} Years)</p>
                     </div>
-                    <span role='button' onClick={(e) => handleScroll(e, 'contact-form')} className='customBtn py-1 px-4'>Invest</span>
+                    <span role='button' onClick={(e) => handleScroll(e, 'contact-form')} className='customBtn px-4'>Invest</span>
                 </div>
                 <div className="col-md-9 col-sm-12 js-scroll slide-right">
                     <p>

@@ -32,11 +32,10 @@ footer::before {
 }
 .footer-contact button {
     background-color: var(--basic-dark);
-    border: 1px solid var(--grey-color);
+    border: none;
     border-radius: 50px;
     color: var(--basic-white);
     padding: 1px 15px;
-    
 }
 .footer-contact button:hover {
     scale: 0.98;

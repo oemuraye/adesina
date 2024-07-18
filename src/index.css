@@ -169,6 +169,15 @@ h2 {
 }
 
 
+
+@media (max-width: 600px) {
+  img {
+    height: auto !important;
+  }
+}
+
+
+
 @keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-100px);
