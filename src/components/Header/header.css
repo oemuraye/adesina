@@ -104,8 +104,8 @@
     }
   
     .navbar-brand {
-      position: absolute;
-      top: 10px;
+      /* position: absolute;
+      top: 10px; */
       /* left: 20px; */
       z-index: 1100;
     }

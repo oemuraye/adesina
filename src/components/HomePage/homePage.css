@@ -100,10 +100,10 @@
 
 @media (max-width: 768px) {
   .home_page-section .hero-text {
-    padding-bottom: 70px;
+    /* padding-bottom: 70px; */
   }
   .home_page-section {
-    margin-top: 0px;
+    /* margin-top: 0px; */
   }
   .home_page-section .brand_info-section h3 {
     font-size: 30px;
