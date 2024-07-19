@@ -24,8 +24,10 @@
 @media (max-width: 767px) {
     .investment-section .imgHover_effect img {
         height: 393px !important;
+        object-fit: cover;
     }
     .property_details-section .imgHover_effect img {
         height: 411px !important;
+        object-fit: cover;
     }
 }

@@ -20,6 +20,9 @@
 .contact_page-section hr {
     border: 1px solid var(--grey-color);
 }
+.contact_page-section a:hover {
+    color: var(--form-placholder-color);
+}
 
 @media (max-width: 768px) {
     .contact_page-section .hero {

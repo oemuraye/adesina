@@ -31,11 +31,11 @@ const Blog = () => {
         {blogNewsDetails.map((detail, index) => (
           <div role='button' onClick={() => goToBlogDetails(detail)} key={index} className="col-md-4 col-sm-12 my-md-5 my-2">
             <div className="imgHover_effect news-item">
-              <img src={detail.displayImg} alt="newsImg" className="img-fluid" />
+              <img src={detail.displayImg} alt="newsImg" className="img-fluid" width='100%' />
               <div className="overlay"></div>
               <div className="news-details">
                 <h4 className="custom-besleyFont mb-0">{detail.title}</h4>
-                <p>{detail.date}</p>
+                <p className='custom-neueFont_roman'>{detail.date}</p>
               </div>
             </div>
           </div>

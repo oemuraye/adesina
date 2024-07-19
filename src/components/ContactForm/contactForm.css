@@ -29,12 +29,10 @@
     color: #fff;
     background-color: #000000a9;
     padding: 5px;
-    /* font-style: 30px; */
 }
 .contact_form-section input::placeholder {
     color: var(--form-placholder-color);
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-    /* font-weight: 500; */
 }
 .custom-select-arrow {
     appearance: none;
@@ -42,11 +40,8 @@
     -moz-appearance: none;
     background: url('../../utils/icons/arrow-down-icon.png') no-repeat right 10px center;
     background-size: 12px 6px;
-    padding-right: 30px; /* Add some padding to avoid overlapping with the arrow */
-    border: 1px solid #ccc; /* Adjust border as needed */
-    border-radius: 4px; /* Adjust border radius as needed */
-    height: 40px; /* Adjust height as needed */
-  }
+    padding-right: 30px; 
+ }
   
   /* For older versions of Firefox */
   .custom-select-arrow:-moz-focusring {

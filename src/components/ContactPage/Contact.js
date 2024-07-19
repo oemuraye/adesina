@@ -12,7 +12,7 @@ const Contact = () => {
             </div>
         </section>
 
-        <section className="container-fluid my-5 text-white">
+        <section className="container-fluid my-5 text-white custom-neueFont_roman">
             <div className="general-contact mb-md-5 mb-2 pb-md-2 pb-5">
                 <hr />
 
@@ -34,11 +34,11 @@ const Contact = () => {
                         <h4 className='custom-besleyFont'>Social</h4>
                     </div>
                     <div className="col-md-3 col-5">
-                        <div className="d-flex flex-column">
-                            <Link to="#">Instagram</Link>
-                            <Link to="#">Facebook</Link>
-                            <Link to="#">X</Link>
-                            <Link to="#">Youtube</Link>
+                        <div className="d-flex flex-column gap-2">
+                            <Link to="http://Facebook.com/adesinaaco">Instagram</Link>
+                            <Link to="http://instagram.com/adesinaco">Facebook</Link>
+                            <Link to="http://twitter.com/adesinaco">X</Link>
+                            <Link to="http://YouTube.com/@adesinaco">Youtube</Link>
                         </div>
                     </div>
                 </div>
@@ -51,8 +51,8 @@ const Contact = () => {
                         <h4 className='custom-besleyFont'>Office</h4>
                     </div>
                     <div className="col-md-3 col-5">
-                        <div className="d-flex flex-column">
-                            <Link to="#">1st Floor, Murjantu House, <br /> Maitama, Abuja</Link>
+                        <div className="d-flex flex-column gap-2">
+                            <Link target='_blank' to='https://www.google.com/maps/search/?'>1st Floor, Murjantu House, <br /> Maitama, Abuja</Link>
                         </div>
                     </div>
                 </div>
@@ -60,8 +60,8 @@ const Contact = () => {
             </div>
         </section>
 
-        <section className='container'>
-            <ContactForm />
+        <section className='container my-5 py-5'>
+            <ContactForm formType="contact" />
         </section>
     </section>
   )

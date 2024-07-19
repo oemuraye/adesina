@@ -26,20 +26,20 @@ const About = () => {
   return (
     <main className='page-width about-section container-fluid my-5 pb-5'>
         
-        <section className="d-flex flex-column gap-4 mb-5">
-            <div className="about-heading custom-besleyFont js-scroll slide-left">
+        <section className="about-hero d-flex flex-column gap-4 mb-5 pt-5">
+            <div className="about-heading custom-besleyFont js-scroll slide-left my-3">
                 <h4>Driven by the AfriProsperity philosophy, Adesina is on a mission to contribute $1B in Infrastructure Development across Africa by 2030, by co-investing in strategic opportunities for collective wealth.</h4>
             </div>
-            <div className="js-scroll fade-in imgHover_effect img-fluid"><img src={aboutInfoImg} alt="projImg" /></div>
+            <div className="js-scroll fade-in imgHover_effect img-fluid"><img src={aboutInfoImg} alt="projImg" width='100%' /></div>
         </section>
 
         <section className='row values-section mt-5'>
-          <div className="col-md-7 col-sm-12 my-3 p-2 js-scroll slide-left">
+          <div className="col-md-7 col-sm-12 my-4 p-2 js-scroll slide-left">
             <div className="values-info custom-besleyFont">
                 <h4>Riding on the core values of Excellence, Audacity and Honor, Adesina is dedicated to offering the following</h4>
             </div>
           </div>
-          <div className="col-md-5 col-sm-12 my-3 js-scroll slide-right">
+          <div className="col-md-5 col-sm-12 my-4 mb-5 js-scroll slide-right">
             <div className="d-flex flex-column gap-4 p-2">
 
                 {valuesData.map((detail, index) => (
@@ -66,10 +66,10 @@ const About = () => {
                 <div className="col-md-9 col-sm-12">
                     <div className="row team-members">
                         {teamMembers.map((detail, index) => (
-                            <div key={index} className="col-md-6 col-sm-12 d-flex flex-column gap-1">
-                                <img src={detail.profilePic} alt="" className="img-fluid" width='' />
-                                <h5 className="custom-besleyFont mb-0">{detail.name}</h5>
-                                <p>{detail.role}</p>
+                            <div key={index} className="col-md-6 col-sm-12 d-flex flex-column gap-2 my-4">
+                                <img src={detail.profilePic} alt="" className="img-fluid" width='100%' />
+                                <h5 className="custom-besleyFont mt-4 mb-0">{detail.name}</h5>
+                                <p className="custom-neueFont_roman ">{detail.role}</p>
                             </div>
                         ))} 
                     </div>

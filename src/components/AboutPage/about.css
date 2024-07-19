@@ -1,5 +1,5 @@
 .about-section .about-heading {
-    max-width: 700px;
+    max-width: 1000px;
 }
 .about-section .values-info {
     max-width: 450px;
@@ -8,6 +8,29 @@
     list-style: inside;
 }
 
-.team-section .team-members p {
-    font-size: 12px;
+.about-heading h4 {
+    font-size: 38px;
+    font-weight: normal;
+}
+.about-hero img {
+    height: 650px;
+}
+.about-section .team-members img {
+    height: 350px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px ) {
+    .about-heading h4 {
+        font-size: 30px;
+    }
+    .about-hero img {
+        height: 500px !important;
+        object-fit: cover;
+    }
+    .about-section .team-members img {
+        height: 306px !important;
+        object-fit: cover;
+    }
 }

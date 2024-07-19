@@ -57,9 +57,6 @@
 
 /* Brand Info Section */
 
-.home_page-section .brand_info-section article {
-  /* max-width: 450px; */
-}
 .home_page-section .brand_info-section {
   max-width: 1200px;
   margin: 0 auto;

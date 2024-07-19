@@ -97,7 +97,7 @@ const InvestmentDetails = () => {
             </div>
         </section>
 
-        <section id='contact-form' className='my-5 py-5'><ContactForm /></section>       
+        <section id='contact-form' className='my-5 py-5'><ContactForm formType="invest" /></section>       
     </section>
   )
 }
