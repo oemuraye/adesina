@@ -4,10 +4,28 @@
 .property_details-section a:hover {
     transform: scale(0.98);
 }
-/* .property_details-section .imgHover_effect img {
-    height: 624px;
-} */
 
 .investment-section .imgHover_effect img {
     height: 515px;
+}
+.property_details-section .imgHover_effect img {
+    height: 600px;
+}
+.property_details-section .invest-details p,
+.property_details-section .invest-details h4 {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-size: 20px;
+}
+.property_details-section .invest-description {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    /* font-size: 20px; */
+}
+
+@media (max-width: 767px) {
+    .investment-section .imgHover_effect img {
+        height: 393px !important;
+    }
+    .property_details-section .imgHover_effect img {
+        height: 411px !important;
+    }
 }

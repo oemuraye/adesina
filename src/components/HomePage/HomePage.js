@@ -23,24 +23,23 @@ const HomePage = () => {
         <section className="hero">
             <video autoPlay muted loop className="hero-video">
                 <source src={heroVideo} type="video/mp4" />
-                <img src={heroImg} alt="Background-image" className="hero-bg-image" />
                 Your browser does not support the video tag.
             </video>
-            <div className='hero-text'>
-                <div className="d-flex flex-column gap-3">
-                    <h1 className="js-scroll fade-in">Real Estate For</h1>
-                    <h1 className="js-scroll fade-in">True Investors</h1>
+            <div className='hero-text container-fluid'>
+                <div className="d-flex flex-column">
+                    <h1 className="js-scroll fade-in-bottom mb-0">Real Estate For</h1>
+                    <h1 className="js-scroll fade-in-bottom">True Investors</h1>
                 </div>
             </div>
         </section>
 
-        <section className="container brand_info-section row my-5">
+        <section className="container brand_info-section row my-5 py-4">
             <div className="col-md-6 col-sm-12 my-4 js-scroll slide-left count-up-trigger">
                 <article className='d-flex flex-column gap-2'>
                     <h4>Adesina Asset stands as the premier choice for discerning investors, offering secure and high-return real estate opportunities that transcend the typical market offerings.</h4>
                     <div className="d-flex flex-column">
                         <CountUpAnimation end={100} duration={2000} trigger={triggerCountUp} />
-                        <span>Investors</span>
+                        <h4>Investors</h4>
                     </div>
                 </article>
             </div>

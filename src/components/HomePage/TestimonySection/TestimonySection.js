@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import arrowRight from '../../../utils/icons/arrow right.png';
 import arrowLeft from '../../../utils/icons/arrow left.png';
+import quotation from '../../../utils/icons/quotation.png';
 
 const testimonies = [
     { author: "Emmanuel", location: 'Lagos, Nigeria', text: "I won't have made some bad investments if I had known what I know now with Adesina. Your investments are also very clear and easy, especially with the installment plan. Others will increase by maybe 20% if you're paying installments. I believe if we continue like this, In 10years, I'll be a big man effortlessly." },
@@ -24,7 +25,7 @@ const TestimonySection = () => {
   // };
 
   return (
-    <section id="carouselExampleControlsNoTouching" className="container js-scroll fade-in px-md-5 px-sm-1 carousel slide" data-bs-touch="false" data-bs-interval="false">
+    <section id="carouselExampleControlsNoTouching" className="container js-scroll fade-in px-md-5 px-sm-1 carousel slide my-5" data-bs-touch="false" data-bs-interval="false">
       <div className="d-flex gap-3 mb-4">
         <img role='button' src={arrowLeft} alt="indicators" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev" />
         <img role='button' src={arrowRight} alt="indicators" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" />
@@ -32,10 +33,10 @@ const TestimonySection = () => {
       <div className="carousel-inner">
         {testimonies.map((testimony, index) => (
             <div key={index} className={`carousel-item ${index === currentIndex ? 'active' : ''}`}>
-              <i className="fa-solid fa-quote-left mb-4"></i>
-              <div className='ps-3'>
-                <p className=''>{testimony.text}</p>
-                <h4 className='custom-besleyFont mb-0'>{testimony.author}</h4>
+              <img src={quotation} alt="" className='mb-4' />
+              <div className='container testimony-text ps-3'>
+                <p className='custom-neueFont_400Weight'>{testimony.text}</p>
+                <h4 className='custom-besleyFont mb-0 mt-4'>{testimony.author}</h4>
                 <h5 className='custom-besleyFont'>{testimony.location}</h5>
               </div>
             </div>

@@ -2,16 +2,65 @@
     max-width: 500px;
     margin: 0 auto;
 }
+.contact_form-section h3 {
+    font-size: 39px;
+}
 .contact_form-section input.form-control {
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid var(--basic-white);
+    border-bottom: 1px solid var(--charcoal-color);
     background-color: var(--basic-dark);
     padding: 4px 0px;
-    color: var(--basic-white);
+    color: var(--form-placholder-color);
+}
+.contact_form-section select.form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--charcoal-color);
+    background-color: var(--basic-dark);
+    padding: 4px 0px;
+    color: var(--form-placholder-color);
+    cursor: pointer;
+}
+.contact_form-section select:focus {
+    box-shadow: none;
+}
+.contact_form-section option {
+    color: #fff;
+    background-color: #000000a9;
+    padding: 5px;
+    /* font-style: 30px; */
 }
 .contact_form-section input::placeholder {
-    color: var(--grey-color);
+    color: var(--form-placholder-color);
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-    font-weight: 500;
+    /* font-weight: 500; */
+}
+.custom-select-arrow {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../../utils/icons/arrow-down-icon.png') no-repeat right 10px center;
+    background-size: 12px 6px;
+    padding-right: 30px; /* Add some padding to avoid overlapping with the arrow */
+    border: 1px solid #ccc; /* Adjust border as needed */
+    border-radius: 4px; /* Adjust border radius as needed */
+    height: 40px; /* Adjust height as needed */
+  }
+  
+  /* For older versions of Firefox */
+  .custom-select-arrow:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+  
+  .custom-select-arrow option {
+    color: #000; /* Option text color */
+  }
+  
+
+@media (max-width: 768px) {
+    .contact_form-section h3 {
+        font-size: 30px;
+    }
 }

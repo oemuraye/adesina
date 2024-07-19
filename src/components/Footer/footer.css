@@ -1,6 +1,6 @@
 footer {
     position: relative;
-    max-width: 1310px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 footer::before {
@@ -14,7 +14,7 @@ footer::before {
 }
 
 .footer-contact form {
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .footer-contact input.form-control {
@@ -23,7 +23,7 @@ footer::before {
     border-bottom: 1px solid var(--basic-white);
     background-color: var(--basic-dark);
     padding: 4px 0px;
-    color: var(--basic-white);
+    color: var(--grey-color);
 }
 .footer-contact input::placeholder {
     color: var(--grey-color);
@@ -46,8 +46,28 @@ footer::before {
 .footer-links ul li {
     margin-bottom: 7px;
 }
+.footer-links a {
+    font-family: 'Neue Haas Grotesk Display Pro';
+}
+
+
 footer .social-links a {
-    border: 1px solid var(--basic-white);    
+    outline: 1px solid var(--basic-white);    
     border-radius: 100%;
     padding: 4px 10px;
+    transition: background-color 0.7s ease-in-out, outline 2.3s ease-in-out;
+}
+footer .social-links a:hover {
+    background-color: var(--charcoal-color);
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .footer-links a,
+    .footer-links h4 {
+        font-size: 16px;
+    }
+    .copyright {
+        font-size: 14px;
+    }
 }

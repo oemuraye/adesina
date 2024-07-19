@@ -24,22 +24,22 @@ const InvestmentDetails = () => {
 
   return (
     <section className='page-width container-fluid pb-5 my-5'>
-        <section className="d-flex gap-3 align-items-center">
+        <section className="d-flex gap-4 align-items-center mb-1">
             <h1 className='mb-4 pt-4'>{details.title}</h1>
-            <div className="d-flex align-items-center gap-2">
+            <div className="d-flex align-items-center gap-3">
               <img src={locationPin} alt="icon" width='20px' height='25px' />
-              <Link target='_blank' to='https://www.google.com/maps/search/?'>{details.address}</Link>
+              <Link className='custom-neueFont_roman' target='_blank' to='https://www.google.com/maps/search/?'>{details.address}</Link>
             </div>
         </section>
 
         <section className="property_details-section">
-            <div className='imgHover_effect'><img src={displayImg} alt="displayImg" className='img-fluid' width="100%" /></div>
+            <div className='imgHover_effect'><img src={details.projImg} alt="displayImg" className='img-fluid' width="100%" /></div>
         
             <div className="row my-5">
-                <div className="col-md-3 col-sm-12 js-scroll slide-left">
+                <div className="invest-details col-md-3 col-sm-12 js-scroll slide-left ">
                     <div className="d-flex flex-column">
                         <h4 className='mb-1'>MINIMUM INVESTMENT</h4>
-                        <p className='mb-0'>₦{details.amount}</p>
+                        <p className='mb-0'>{details.fullAmount}</p>
                     </div>
                     <div className="d-flex flex-column my-4">
                         <h4 className='mb-1'>TARGET RETURNS</h4>
@@ -47,7 +47,7 @@ const InvestmentDetails = () => {
                     </div>
                     <span role='button' onClick={(e) => handleScroll(e, 'contact-form')} className='customBtn px-4'>Invest</span>
                 </div>
-                <div className="col-md-9 col-sm-12 js-scroll slide-right">
+                <div className="invest-description col-md-9 col-sm-12 js-scroll slide-right">
                     <p>
                         These plots offer true investors the opportunity to capitalize on a strategic real estate investment in Abuja. 
                         The plot is situated in an already fully residential area with tons of fast paced development all around that is 

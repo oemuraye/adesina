@@ -18,11 +18,11 @@
   
   .navbar {
     transition: background-color 1s ease;
-    z-index: 100;
+    z-index: 1000;
   }
   
   .navbar nav {
-    max-width: 1310px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   
@@ -32,6 +32,7 @@
     padding-right: 0 !important;
     font-family: 'Neue Haas Grotesk Display Pro', serif;
     font-weight: 500;
+    font-size: 18px !important;
   }
   
   .nav-link.active {
@@ -79,17 +80,19 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: translateX(100%);
+      transform: translateX(0);
       z-index: 1000;
       transition: transform 2.5s ease;
     }
   
     .navbar-collapse.show {
       animation: slideIn 2.5s forwards;
+      transform: translateX(100%);
     }
   
     .navbar-collapse.hide {
       animation: slideOut 0.7s forwards;
+      transform: translateX(0);
     }
   
     .navbar-nav {

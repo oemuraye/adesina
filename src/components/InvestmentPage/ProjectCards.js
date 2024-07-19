@@ -13,22 +13,22 @@ const ProjectCards = ({ details }) => {
     <section className='mb-5'>
         <hr />
 
-        <section className='row mt-5'>
+        <section className='row mt-5 pt-3'>
           <div className="col-md-5 col-sm-12 my-3 js-scroll slide-left">
             <div className="d-flex align-items-center gap-4">
               <h3 className='mb-0 custom-besleyFont'>{details.title}</h3>
-              {details.projectStatus === 'open' ? (
-                <span role='button' onClick={goToProjectDetails} className='customBtn'>View Project</span>
+              {details.projectStatus === 'Closed' ? (
+                <span className='customBtn customBtn-closed'>{details.projectStatus}</span>
               ): (
-                <span className='customBtn customBtn-closed'>Closed</span>
+                <span role='button' onClick={goToProjectDetails} className='customBtn'>{details.projectStatus}</span>
               )}
             </div>
 
-            <div className="d-flex flex-column gap-4 my-4">
+            <div className="d-flex flex-column gap-3 custom-neueFont_roman my-4">
               <p className='mb-0'>{details.numOfUnits}</p>
-              {details.annualCashFlow !== '' && (<p className='mb-0'>{details.annualCashFlow}% Annual Cashflow</p>)}
+              {details.annualCashFlow !== '' && (<p className='mb-0'>{details.annualCashFlow} Annual Cashflow</p>)}
               <p className='mb-0'>{details.description} Target Returns ({details.years}years)</p>
-              <p className='mb-0'>Minimum Investment: ₦{details.amount}</p>
+              <p className='mb-0'>Minimum Investment: {details.amount}</p>
             </div>
 
             <div className="d-flex align-items-center gap-2">

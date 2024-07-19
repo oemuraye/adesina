@@ -1,20 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&display=swap');
 
-@font-face {
+/* @font-face {
   font-family: 'Neue Haas Grotesk Display Pro';
   src: url('../src/utils/fonts/NeueHaasGrotesk/NeueHaasDisplay-Mediu.woff') format('woff2'),
        url('../src/utils/fonts/NeueHaasGrotesk/NeueHaasDisplay-Mediu.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 @font-face {
   font-family: 'Neue Haas Grotesk Display Pro';
-  src: url('../src/utils/fonts/NeueHaasGrotesk/NeueHaasDisplay-Bold.woff') format('woff2'),
-       url('../src/utils/fonts/NeueHaasGrotesk/NeueHaasDisplay-Light.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
+  src: url('../src/utils/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayRoman.ttf') format('woff2'),
+       url('../src/utils/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayRoman.ttf') format('woff');
 }
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro lightweight';
+  src: url('../src/utils/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayLight.ttf') format('woff2'),
+}
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro bold';
+  src: url('../src/utils/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayBold.ttf') format('woff2'),
+       url('../src/utils/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayBold.ttf') format('woff');
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,6 +33,7 @@ html {
   --charcoal-color: #3F3F3F;
   --grey-color: #999999;
   --bg_grey-color: #E6E7E8;
+  --form-placholder-color: #7E7D7D;
 }
 
 body {
@@ -39,32 +48,31 @@ body {
 }
 .page-width {
   color: var(--basic-white);
-  max-width: 1310px;
+  max-width: 1200px;
   margin: 0 auto;
 }
+
+/* CUstom Fonts */
 .custom-besleyFont {
   font-family: "Besley", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-.custom-neueFont_500Weight {
+.custom-neueFont_roman {
   font-family: 'Neue Haas Grotesk Display Pro';
   font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
 }
-.custom-neueFont_400Weight {
-  font-family: 'Neue Haas Grotesk Display Pro';
+.custom-neueFont_light {
+  font-family: 'Neue Haas Grotesk Display Pro lightweight';
   font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
 .custom-neueFont_Bold {
-  font-family: 'Neue Haas Grotesk Display Pro';
+  font-family: 'Neue Haas Grotesk Display Pro bold';
   font-optical-sizing: auto;
-  font-style: bold;
 }
+
+/* Custom Buttons */
 .customBtn {
   background-color: var(--basic-dark);
   outline: 1px solid var(--grey-color);
@@ -80,19 +88,19 @@ body {
 }
 .customBtn-circle {
   background-color: var(--basic-dark);
-  border: 1px solid var(--grey-color);
+  outline: 1px solid var(--grey-color);
   border-radius: 50%;
   color: var(--basic-white);
-  padding: 6px 12px;
+  padding: 8px 15px;
   font-family: 'Neue Haas Grotesk Display Pro';
   font-weight: 500;
   font-style: normal;
-  transition: background-color 2.3s ease-in-out, outline 2.3s ease-in-out;
+  transition: background-color 0.7s ease-in-out, outline 2.3s ease-in-out;
   animation-timing-function: ease-in-out;
   animation-duration: 40000ms;
 }
 .customBtn-closed {
-  border-color: transparent;
+  outline-color: transparent;
   background-color: var(--charcoal-color);
 }
 .customBtn:hover {
@@ -100,9 +108,11 @@ body {
   outline: none;
 }
 .customBtn-circle:hover {
-  transform: scale(1.01);
+  background-color: var(--charcoal-color);
+  outline: none;
 }
 
+/* Utils */
 textarea:focus,
 input:focus {
   box-shadow: none !important;
@@ -142,7 +152,6 @@ h2 {
 }
 
 /**Styling scrollable elements*/
-
 .js-scroll {
   opacity: 0;
   transition: opacity 500ms;
@@ -153,19 +162,19 @@ h2 {
 }
 
 .scrolled.fade-in {
-  animation: fade-in .9s ease-in-out both;
+  animation: fade-in 1.5s ease-in-out both;
 }
 
 .scrolled.fade-in-bottom {
-  animation: fade-in-bottom .7s ease-in-out both;
+  animation: fade-in-bottom 1.5s ease-in-out both;
 }
 
 .scrolled.slide-left {
-  animation: slide-in-left .7s ease-in-out both;
+  animation: slide-in-left 1.5s ease-in-out both;
 }
 
 .scrolled.slide-right {
-  animation: slide-in-right .7s ease-in-out both;
+  animation: slide-in-right 1.5s ease-in-out both;
 }
 
 
@@ -175,7 +184,17 @@ h2 {
     height: auto !important;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 2.23rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 61px;
+  }
+}
+@media (min-width: 1025px) {
+  .hero-text h1 {
+    font-size: 80px; 
   }
 }
 
