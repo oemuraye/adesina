@@ -9,7 +9,7 @@ import ContactForm from '../ContactForm/ContactForm';
 // import subscriptionFormDoc from '../../utils/docs'
 
 import locationPin from "../../utils/icons/location_pin.png";
-import displayImg from "../../utils/images/displayImg.png";
+import downloadIconDark from "../../utils/icons/download-dark-icon.png";
 import downloadIcon from "../../utils/icons/downloadIcon.png";
 import useScrollAnimation from '../../hooks/useScrollAnimation';
 import { useState } from 'react';
@@ -103,15 +103,15 @@ const InvestmentDetails = () => {
                                 <div className="col-md-6 col-sm-12 my-2 no-availableDocs">
                                     <div className="d-flex flex-column gap-4">
                                         <div className='d-flex align-items-center gap-2' to="" download="Original Survey">
-                                            <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                            <span className='customBtn-circle'><img src={downloadIconDark} alt="downloadIcon" /></span>
                                             <p className='mb-0'>Original Survey</p>
                                         </div>
                                         <div className='d-flex align-items-center gap-2' to="" download="Original R of O Issued">
-                                            <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                            <span className='customBtn-circle'><img src={downloadIconDark} alt="downloadIcon" /></span>
                                             <p className='mb-0'>Original R of O Issued</p>
                                         </div>
                                         <div className='d-flex align-items-center gap-2' to="" download="FCTA Regularization">
-                                            <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                            <span className='customBtn-circle'><img src={downloadIconDark} alt="downloadIcon" /></span>
                                             <p className='mb-0'>FCTA Regularization</p>
                                         </div>
                                     </div>
@@ -119,11 +119,11 @@ const InvestmentDetails = () => {
                                 <div className="col-md-6 col-sm-12 my-2 no-availableDocs">
                                     <div className="d-flex flex-column gap-4">
                                         <div className='d-flex align-items-center gap-2' to="" download="Conveyance of Minister's Approval">
-                                            <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                            <span className='customBtn-circle'><img src={downloadIconDark} alt="downloadIcon" /></span>
                                             <p className='mb-0'>Conveyance of Minister's Approval</p>
                                         </div>
                                         <div className='d-flex align-items-center gap-2' to="" download="Plot Subscription Form">
-                                            <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                            <span className='customBtn-circle'><img src={downloadIconDark} alt="downloadIcon" /></span>
                                             <p className='mb-0'>Plot Subscription Form</p>
                                         </div>
                                     </div>

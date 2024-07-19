@@ -28,8 +28,8 @@ const Footer = () => {
                         </div>
                         <ul className='col-6'>
                             <li><h4 className='custom-neueFont_Bold'>Contact us</h4></li>
-                            <li><Link to='tel:+2348106575600'>(+234) 810 6575 600</Link></li>
-                            <li><Link to='tel:+234811 2143 923'>(+234) 811 2143 923</Link></li>
+                            <li><Link to='tel:+2347055554807'>(+234) 705 5554 807</Link></li>
+                            <li><Link to='tel:+2348053323987'>(+234) 805 3323 987</Link></li>
                             <li><Link to='mailto:business@adesina.ng'>business@adesina.ng</Link></li>
                         </ul>
                     </div>

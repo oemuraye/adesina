@@ -22,11 +22,10 @@
 }
 
 .documents-section .no-availableDocs span {
-outline-color: transparent;
-  background-color: var(--charcoal-color);
+    outline: 1px solid var(--charcoal-color);
 }
 .documents-section .no-availableDocs p {
-    color: var(--grey-color);
+    color: var(--charcoal-color);
 }
 
 @media (max-width: 767px) {
