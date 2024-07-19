@@ -3,13 +3,13 @@
 }
 
 .contact_page-section .hero {
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat-x;
     position: relative;
     background-image: url(../../utils/images/contactHero_Img.png);
-    height: 400px;
+    height: 500px;
     /* width: 100%; */
 }
 
@@ -19,4 +19,11 @@
 }
 .contact_page-section hr {
     border: 1px solid var(--grey-color);
+}
+
+@media (max-width: 768px) {
+    .contact_page-section .hero {
+        height: 326px;
+        background-attachment: scroll;
+    }
 }
