@@ -35,7 +35,7 @@ const TestimonySection = () => {
             <div key={index} className={`carousel-item ${index === currentIndex ? 'active' : ''}`}>
               <img src={quotation} alt="" className='mb-4' />
               <div className='container testimony-text ps-3'>
-                <p className='custom-neueFont_400Weight'>{testimony.text}</p>
+                <p className=''>{testimony.text}</p>
                 <h4 className='custom-besleyFont mb-0 mt-4'>{testimony.author}</h4>
                 <h5 className='custom-besleyFont'>{testimony.location}</h5>
               </div>

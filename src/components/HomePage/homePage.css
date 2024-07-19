@@ -92,6 +92,8 @@
 }
 .testimony-section .testimony-text p {
   font-size: 32px;
+  font-family: 'Neue Haas Grotesk Display Pro lightweight';
+  line-height: 1.2;
 }
 .testimony-section .testimony-text h4 {
   font-size: 25px;
@@ -110,6 +112,7 @@
   }  
   .testimony-section .testimony-text p {
     font-size: 25px;
+    font-family: 'Neue Haas Grotesk Display Pro';
   }
   .testimony-section .testimony-text h4 {
     font-size: 20px;
