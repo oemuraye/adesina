@@ -36,7 +36,7 @@ const InvestmentDetails = () => {
             <div className='imgHover_effect'><img src={details.projImg} alt="displayImg" className='img-fluid' width="100%" /></div>
         
             <div className="row my-5">
-                <div className="invest-details col-md-3 col-sm-12 js-scroll slide-left ">
+                <div className="invest-details col-md-3 col-sm-12 js-scroll slide-left my-4">
                     <div className="d-flex flex-column">
                         <h4 className='mb-1'>MINIMUM INVESTMENT</h4>
                         <p className='mb-0'>{details.fullAmount}</p>
@@ -47,7 +47,7 @@ const InvestmentDetails = () => {
                     </div>
                     <span role='button' onClick={(e) => handleScroll(e, 'contact-form')} className='customBtn px-4'>Invest</span>
                 </div>
-                <div className="invest-description col-md-9 col-sm-12 js-scroll slide-right">
+                <div className="invest-description col-md-9 col-sm-12 js-scroll slide-right my-4">
                     <p>
                         These plots offer true investors the opportunity to capitalize on a strategic real estate investment in Abuja. 
                         The plot is situated in an already fully residential area with tons of fast paced development all around that is 

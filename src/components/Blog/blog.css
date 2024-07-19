@@ -50,6 +50,6 @@
 @media (max-width: 768px ) {
     .blog_details-section .imgHover_effect img {
         max-height: 406px !important;
-        object-fit: cover;
+        object-fit: cover !important;
     }
 }
