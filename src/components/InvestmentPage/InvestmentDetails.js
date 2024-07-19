@@ -16,7 +16,7 @@ import { useState } from 'react';
 
 const InvestmentDetails = () => {
     useScrollAnimation();
-    const [docsAvaliable, setdocsAvaliable] = useState(false);
+    const [docsAvailable, setdocsAvaliable] = useState(false);
     const location = useLocation();
     const { details } = location.state;
     const handleScroll = (e, targetId) => {
@@ -67,34 +67,69 @@ const InvestmentDetails = () => {
                     <p>Get exclusive details on this deal before public offer now.</p>
 
                     <div className="row documents-section">
-                        <div className="col-md-6 col-sm-12 my-2">
-                            <div className="d-flex flex-column gap-4">
-                                <Link className='d-flex align-items-center gap-2' to="" download="Original Survey">
-                                    <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
-                                    <p className='mb-0'>Original Survey</p>
-                                </Link>
-                                <Link className='d-flex align-items-center gap-2' to="" download="Original R of O Issued">
-                                    <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
-                                    <p className='mb-0'>Original R of O Issued</p>
-                                </Link>
-                                <Link className='d-flex align-items-center gap-2' to="" download="FCTA Regularization">
-                                    <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
-                                    <p className='mb-0'>FCTA Regularization</p>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-sm-12 my-2">
-                            <div className="d-flex flex-column gap-4">
-                                <Link className='d-flex align-items-center gap-2' to="" download="Conveyance of Minister's Approval">
-                                    <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
-                                    <p className='mb-0'>Conveyance of Minister's Approval</p>
-                                </Link>
-                                <Link className='d-flex align-items-center gap-2' to="" download="Plot Subscription Form">
-                                    <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
-                                    <p className='mb-0'>Plot Subscription Form</p>
-                                </Link>
-                            </div>
-                        </div>
+                        {docsAvailable === true ? (
+                            <>
+                                <div className="col-md-6 col-sm-12 my-2">
+                                <div className="d-flex flex-column gap-4">
+                                    <Link className='d-flex align-items-center gap-2' to="" download="Original Survey">
+                                        <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                        <p className='mb-0'>Original Survey</p>
+                                    </Link>
+                                    <Link className='d-flex align-items-center gap-2' to="" download="Original R of O Issued">
+                                        <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                        <p className='mb-0'>Original R of O Issued</p>
+                                    </Link>
+                                    <Link className='d-flex align-items-center gap-2' to="" download="FCTA Regularization">
+                                        <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                        <p className='mb-0'>FCTA Regularization</p>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className="col-md-6 col-sm-12 my-2">
+                                    <div className="d-flex flex-column gap-4">
+                                    <Link className='d-flex align-items-center gap-2' to="" download="Conveyance of Minister's Approval">
+                                        <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                        <p className='mb-0'>Conveyance of Minister's Approval</p>
+                                    </Link>
+                                    <Link className='d-flex align-items-center gap-2' to="" download="Plot Subscription Form">
+                                        <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                        <p className='mb-0'>Plot Subscription Form</p>
+                                    </Link>
+                                    </div>
+                                </div>
+                            </>
+                        ):(
+                            <>
+                                <div className="col-md-6 col-sm-12 my-2 no-availableDocs">
+                                    <div className="d-flex flex-column gap-4">
+                                        <div className='d-flex align-items-center gap-2' to="" download="Original Survey">
+                                            <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                            <p className='mb-0'>Original Survey</p>
+                                        </div>
+                                        <div className='d-flex align-items-center gap-2' to="" download="Original R of O Issued">
+                                            <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                            <p className='mb-0'>Original R of O Issued</p>
+                                        </div>
+                                        <div className='d-flex align-items-center gap-2' to="" download="FCTA Regularization">
+                                            <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                            <p className='mb-0'>FCTA Regularization</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6 col-sm-12 my-2 no-availableDocs">
+                                    <div className="d-flex flex-column gap-4">
+                                        <div className='d-flex align-items-center gap-2' to="" download="Conveyance of Minister's Approval">
+                                            <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                            <p className='mb-0'>Conveyance of Minister's Approval</p>
+                                        </div>
+                                        <div className='d-flex align-items-center gap-2' to="" download="Plot Subscription Form">
+                                            <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
+                                            <p className='mb-0'>Plot Subscription Form</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </>
+                        )}
                     </div>
 
                 </div>

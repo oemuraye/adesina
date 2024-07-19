@@ -21,6 +21,14 @@
     /* font-size: 20px; */
 }
 
+.documents-section .no-availableDocs span {
+outline-color: transparent;
+  background-color: var(--charcoal-color);
+}
+.documents-section .no-availableDocs p {
+    color: var(--grey-color);
+}
+
 @media (max-width: 767px) {
     .investment-section .imgHover_effect img {
         height: 393px !important;

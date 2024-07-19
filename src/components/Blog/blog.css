@@ -37,7 +37,7 @@
     transform: scale(1);
 }
 
-.blog_details-section .imgHover_effect img {
+.blog_details-section .display-img img {
     max-height: 450px;
     object-fit: cover;
 }
@@ -48,7 +48,7 @@
 }
 
 @media (max-width: 768px ) {
-    .blog_details-section .imgHover_effect img {
+    .blog_details-section .display-img img {
         max-height: 406px !important;
         object-fit: cover !important;
     }
