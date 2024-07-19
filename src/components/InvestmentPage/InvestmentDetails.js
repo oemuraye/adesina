@@ -50,7 +50,7 @@ const InvestmentDetails = () => {
                     <span role='button' onClick={(e) => handleScroll(e, 'contact-form')} className='customBtn px-5'>Invest</span>
                 </div>
                 <div className="invest-description col-md-9 col-sm-12 js-scroll slide-right my-4">
-                    <p>
+                    {/* <p>
                         These plots offer true investors the opportunity to capitalize on a strategic real estate investment in Abuja. 
                         The plot is situated in an already fully residential area with tons of fast paced development all around that is 
                         attractive to both individual and corporate developers to meet Abuja's rental demand. The plots is offering for N10 
@@ -62,7 +62,7 @@ const InvestmentDetails = () => {
                         for both near-term income and long-term appreciation. Plot owners may also consider developing residential real 
                         estate by self on an opportunistic basis, particularly affordable rental units with an attractive price. The plots 
                         offering are expected to be fully subscribed by July, 2024.
-                    </p>
+                    </p> */}
 
                     <p>Get exclusive details on this deal before public offer now.</p>
 

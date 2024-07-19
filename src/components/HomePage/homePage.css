@@ -99,6 +99,9 @@
   font-size: 25px;
   font-weight: bold;
 }
+.testimony-section .testimony-text h5 {
+  /* font-size: 25px; */
+}
 
 @media (max-width: 768px) {
   .home_page-section .hero-text {
