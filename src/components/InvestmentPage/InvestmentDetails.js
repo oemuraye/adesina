@@ -12,9 +12,11 @@ import locationPin from "../../utils/icons/location_pin.png";
 import displayImg from "../../utils/images/displayImg.png";
 import downloadIcon from "../../utils/icons/downloadIcon.png";
 import useScrollAnimation from '../../hooks/useScrollAnimation';
+import { useState } from 'react';
 
 const InvestmentDetails = () => {
     useScrollAnimation();
+    const [docsAvaliable, setdocsAvaliable] = useState(false);
     const location = useLocation();
     const { details } = location.state;
     const handleScroll = (e, targetId) => {
@@ -33,7 +35,7 @@ const InvestmentDetails = () => {
         </section>
 
         <section className="property_details-section">
-            <div className='imgHover_effect'><img src={details.projImg} alt="displayImg" className='img-fluid' width="100%" /></div>
+            <div className='display-img'><img src={details.projImg} alt="displayImg" className='img-fluid' width="100%" /></div>
         
             <div className="row my-5">
                 <div className="invest-details col-md-3 col-sm-12 js-scroll slide-left my-4">
@@ -45,7 +47,7 @@ const InvestmentDetails = () => {
                         <h4 className='mb-1'>TARGET RETURNS</h4>
                         <p className='mb-0'>{details.description} ({details.year} Years)</p>
                     </div>
-                    <span role='button' onClick={(e) => handleScroll(e, 'contact-form')} className='customBtn px-4'>Invest</span>
+                    <span role='button' onClick={(e) => handleScroll(e, 'contact-form')} className='customBtn px-5'>Invest</span>
                 </div>
                 <div className="invest-description col-md-9 col-sm-12 js-scroll slide-right my-4">
                     <p>
@@ -62,7 +64,9 @@ const InvestmentDetails = () => {
                         offering are expected to be fully subscribed by July, 2024.
                     </p>
 
-                    <div className="row">
+                    <p>Get exclusive details on this deal before public offer now.</p>
+
+                    <div className="row documents-section">
                         <div className="col-md-6 col-sm-12 my-2">
                             <div className="d-flex flex-column gap-4">
                                 <Link className='d-flex align-items-center gap-2' to="" download="Original Survey">

@@ -1,6 +1,6 @@
 import useScrollAnimation from "../../hooks/useScrollAnimation";
 
-import projectImg0 from "../../utils/images/coming soon.png";
+import projectImg0 from "../../utils/images/coming soon.jpg";
 import projectImg1 from "../../utils/images/displayImg1.png";
 import projectImg2 from "../../utils/images/displayImg2.png";
 import projectImg3 from "../../utils/images/displayImg3.png";
@@ -12,7 +12,7 @@ import './investments.css';
 import ProjectCards from './ProjectCards';
 
 const projectCardDetails = [
-  { title: 'A19', numOfUnits: '60+ Plots', annualCashFlow: '60', description: '1.5X - 3X', years: '3', amount: '$5,000', fullAmount: '$5,000', address: 'Lugbe, Abuja.', projImg: projectImg0, projectStatus: 'Coming Soon'},
+  { title: 'A66', numOfUnits: '60+ Units', annualCashFlow: '60', description: '1.5X - 3X', years: '3', amount: '$5,000', fullAmount: '$5,000', address: 'Lugbe, Abuja.', projImg: projectImg0, projectStatus: 'Coming Soon'},
   { title: 'A25', numOfUnits: '25 Units', annualCashFlow: '10', description: '2X - 3.5X', years: '5', amount: '₦45M', fullAmount: '₦45,000,000', address: 'Lugbe, Abuja.', projImg: projectImg1, projectStatus: 'Closed'},
   { title: 'A6', numOfUnits: '6 Units', annualCashFlow: '6', description: '2.5X - 3.5X', years: '5', amount: '₦30M', fullAmount: '₦30,000,000', address: 'Jahi, Abuja.', projImg: projectImg2, projectStatus: 'Closed'},
   { title: 'A5', numOfUnits: '5 Units', annualCashFlow: '5-25', description: '2.5X - 3.5X', years: '5', amount: '₦90M', fullAmount: '₦90,000,000', address: 'Ikota, Lekki Lagos.', projImg: projectImg3, projectStatus: 'Closed'},
