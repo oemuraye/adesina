@@ -18,9 +18,9 @@ const ProjectCards = ({ details }) => {
             <div className="d-flex align-items-center gap-4">
               <h3 className='mb-0 custom-besleyFont'>{details.title}</h3>
               {details.projectStatus === 'Closed' ? (
-                <span className='customBtn customBtn-closed'>{details.projectStatus}</span>
+                <span className='customBtn customBtn-closed'>Closed</span>
               ): (
-                <span role='button' onClick={goToProjectDetails} className='customBtn'>{details.projectStatus}</span>
+                <span role='button' onClick={goToProjectDetails} className='customBtn'>View Project</span>
               )}
             </div>
 
