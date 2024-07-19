@@ -82,11 +82,11 @@
       align-items: center;
       transform: translateX(0);
       z-index: 1000;
-      transition: transform 2.5s ease;
+      transition: transform 1s ease;
     }
   
     .navbar-collapse.show {
-      animation: slideIn 2.5s forwards;
+      animation: slideIn 1s forwards;
       transform: translateX(100%);
     }
   
@@ -98,6 +98,9 @@
     .navbar-nav {
       flex-direction: column;
       text-align: center;
+    }
+    .navbar-nav a {
+      font-size: 35px !important;
     }
   
     .navbar-brand {

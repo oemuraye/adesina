@@ -32,7 +32,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
   
 .home_page-section .hero-text h1 {
@@ -94,7 +94,8 @@
   font-size: 32px;
 }
 .testimony-section .testimony-text h4 {
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -105,10 +106,10 @@
     font-size: 30px;
   }  
   .testimony-section .testimony-text p {
-    font-size: 25px;
+    font-size: 20px;
   }
   .testimony-section .testimony-text h4 {
-    font-size: 26px;
+    font-size: 20px;
     /* font-weight: bold; */
   }
   
