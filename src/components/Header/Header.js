@@ -46,11 +46,8 @@ const Header = () => {
           <img src={logo} alt="logo" height="54.37px" width="192px" />
         </Link>
         <button
-          className={`navbar-toggler ${menuOpen ? 'open' : ''}`}
-          type="button"
-          onClick={toggleMenu}
-          aria-controls="navbarSupportedContent"
-          aria-expanded={menuOpen}
+          className={`navbar-toggler ${menuOpen ? 'open' : ''}`} type="button" onClick={toggleMenu} 
+          aria-controls="navbarSupportedContent" aria-expanded={menuOpen}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon" style={{ backgroundImage: `url(${menuOpen ? closeIcon : menuIcon})` }}></span>
