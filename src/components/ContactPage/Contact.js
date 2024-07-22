@@ -5,14 +5,14 @@ import ContactForm from '../ContactForm/ContactForm';
 
 const Contact = () => {
   return (
-    <section className='page-width contact_page-section container-fluid pb-5'>
+    <section className='contact_page-section pb-5'>
         <section className="hero">
             <div className="hero-text container-fluid">
                 <h1 className='mb-4 pt-4'>Get in touch</h1>
             </div>
         </section>
 
-        <section className="container-fluid my-5 text-white custom-neueFont_roman">
+        <section className="page-width container-fluid my-5 text-white custom-neueFont_roman">
             <div className="general-contact mb-md-5 mb-2 pb-md-2 pb-5">
                 <hr />
 
