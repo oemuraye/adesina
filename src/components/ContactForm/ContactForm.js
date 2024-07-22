@@ -15,13 +15,13 @@ const ContactForm = ({formType}) => {
 
           {formType === 'invest' ? (
             <>
-              <input className='form-control' type="text" name="numOfUnits" placeholder='Desired Number of Units (300sqm)' id="numOfUnits" />
-              <select className="form-control custom-select-arrow" name="payment-plan" id="payment-plan" >
+              <input className='form-control' type="number" name="capital" placeholder='Investment Capital (Amount)' id="capital" />
+              {/* <select className="form-control custom-select-arrow" name="payment-plan" id="payment-plan" >
                 <option value="">Payment Plan (₦10M/300sqm)</option>
                 <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
                 <option value="option3">Option 3</option>
-              </select>
+              </select> */}
             </>
           ):(
             <input className='form-control' type="text" name="message" placeholder='Message' id="message" />

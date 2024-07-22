@@ -26,7 +26,8 @@ const ProjectCards = ({ details }) => {
 
             <div className="d-flex flex-column gap-3 custom-neueFont_roman my-4">
               <p className='mb-0'>{details.numOfUnits}</p>
-              {details.annualCashFlow !== '' && (<p className='mb-0'>{details.annualCashFlow}% Annual Cashflow</p>)}
+              {details.annualCashFlow && (<p className='mb-0'>{details.annualCashFlow}% Annual Cashflow</p>)}
+              {details.annualYield && (<p className='mb-0'>{details.annualYield}% Annual Yield</p>)}
               <p className='mb-0'>{details.description} Target Returns ({details.years}years)</p>
               <p className='mb-0'>Minimum Investment: {details.amount}</p>
             </div>

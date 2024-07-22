@@ -11,6 +11,10 @@
     bottom: 10px;
     left: 20px;
 }
+.news-item img {
+    height: 375px;
+    object-fit: cover;
+}
 .imgHover_effect .overlay {
     position: absolute;
     top: 0;

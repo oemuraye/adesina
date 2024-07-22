@@ -52,7 +52,7 @@ const Contact = () => {
                     </div>
                     <div className="col-md-3 col-5">
                         <div className="d-flex flex-column gap-2">
-                            <Link target='_blank' to='https://www.google.com/maps/search/?'>1st Floor, Murjantu House, <br /> Maitama, Abuja</Link>
+                            <Link target='_blank' to='https://www.google.com/maps/search/?'>4th Floor, Tower C, <br /> Churchgate Plaza, <br /> Central Business <br /> District, Abuja, Nigeria</Link>
                         </div>
                     </div>
                 </div>

@@ -45,7 +45,7 @@ const InvestmentDetails = () => {
                     </div>
                     <div className="d-flex flex-column my-4">
                         <h4 className='mb-1'>TARGET RETURNS</h4>
-                        <p className='mb-0'>{details.description} ({details.year} Years)</p>
+                        <p className='mb-0'>{details.description} ({details.years} Years)</p>
                     </div>
                     <span role='button' onClick={(e) => handleScroll(e, 'contact-form')} className='customBtn px-5'>Invest</span>
                 </div>
@@ -73,15 +73,15 @@ const InvestmentDetails = () => {
                                 <div className="d-flex flex-column gap-4">
                                     <Link className='d-flex align-items-center gap-2' to="" download="Original Survey">
                                         <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
-                                        <p className='mb-0'>Original Survey</p>
+                                        <p className='mb-0'>Documents 1</p>
                                     </Link>
                                     <Link className='d-flex align-items-center gap-2' to="" download="Original R of O Issued">
                                         <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
-                                        <p className='mb-0'>Original R of O Issued</p>
+                                        <p className='mb-0'>Documents 2</p>
                                     </Link>
                                     <Link className='d-flex align-items-center gap-2' to="" download="FCTA Regularization">
                                         <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
-                                        <p className='mb-0'>FCTA Regularization</p>
+                                        <p className='mb-0'>Documents 3</p>
                                         </Link>
                                     </div>
                                 </div>
@@ -89,11 +89,11 @@ const InvestmentDetails = () => {
                                     <div className="d-flex flex-column gap-4">
                                     <Link className='d-flex align-items-center gap-2' to="" download="Conveyance of Minister's Approval">
                                         <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
-                                        <p className='mb-0'>Conveyance of Minister's Approval</p>
+                                        <p className='mb-0'>Documents 4</p>
                                     </Link>
                                     <Link className='d-flex align-items-center gap-2' to="" download="Plot Subscription Form">
                                         <span className='customBtn-circle'><img src={downloadIcon} alt="downloadIcon" /></span>
-                                        <p className='mb-0'>Plot Subscription Form</p>
+                                        <p className='mb-0'>Documents 5</p>
                                     </Link>
                                     </div>
                                 </div>
@@ -104,15 +104,15 @@ const InvestmentDetails = () => {
                                     <div className="d-flex flex-column gap-4">
                                         <div className='d-flex align-items-center gap-2' to="" download="Original Survey">
                                             <span className='customBtn-circle'><img src={downloadIconDark} alt="downloadIcon" /></span>
-                                            <p className='mb-0'>Original Survey</p>
+                                            <p className='mb-0'>Documents 1</p>
                                         </div>
                                         <div className='d-flex align-items-center gap-2' to="" download="Original R of O Issued">
                                             <span className='customBtn-circle'><img src={downloadIconDark} alt="downloadIcon" /></span>
-                                            <p className='mb-0'>Original R of O Issued</p>
+                                            <p className='mb-0'>Documents 2</p>
                                         </div>
                                         <div className='d-flex align-items-center gap-2' to="" download="FCTA Regularization">
                                             <span className='customBtn-circle'><img src={downloadIconDark} alt="downloadIcon" /></span>
-                                            <p className='mb-0'>FCTA Regularization</p>
+                                            <p className='mb-0'>Documents 3</p>
                                         </div>
                                     </div>
                                 </div>
@@ -120,11 +120,11 @@ const InvestmentDetails = () => {
                                     <div className="d-flex flex-column gap-4">
                                         <div className='d-flex align-items-center gap-2' to="" download="Conveyance of Minister's Approval">
                                             <span className='customBtn-circle'><img src={downloadIconDark} alt="downloadIcon" /></span>
-                                            <p className='mb-0'>Conveyance of Minister's Approval</p>
+                                            <p className='mb-0'>Documents 4</p>
                                         </div>
                                         <div className='d-flex align-items-center gap-2' to="" download="Plot Subscription Form">
                                             <span className='customBtn-circle'><img src={downloadIconDark} alt="downloadIcon" /></span>
-                                            <p className='mb-0'>Plot Subscription Form</p>
+                                            <p className='mb-0'>Documents 5</p>
                                         </div>
                                     </div>
                                 </div>

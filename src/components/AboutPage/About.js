@@ -10,7 +10,7 @@ import './about.css';
 const About = () => {
     useScrollAnimation();
     const valuesData = [
-        { num: '01', title: 'Market Research', description: 'Driven by the AfriProsperity philosophy, Adesina is on a mission to contribute $1B in Infrastructure Development across Africa by 2030, by co-investing in strategic opportunities for collective wealth.' },
+        { num: '01', title: 'Market Research', description: 'We provide a comprehensive understanding of the target market- consumer behavior, preferences, and market trends to enable informed decisions on investment choices.' },
         { num: '02', title: 'Financial Advisory', description: 'We offer fair and balanced insights to guide investors decisions based on their financial strength, weakness, opportunity and threat in a way that aligns with their goals.' },
         { num: '03', title: 'Investment Management', description: 'We oversee the acquisition, maintenance and exit of assets in investors portfolio, following their short- or long-term investment goals.' },
         { num: '04', title: 'Investors Education', description: 'We offer initiatives that are essential to empower investors with the wealth intelligence required to make sound investment decisions.' }

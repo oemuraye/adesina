@@ -33,6 +33,18 @@
   justify-content: flex-end;
   align-items: flex-start;
   padding-bottom: 30px;
+  z-index: 2;
+}
+.home_page-section .hero-text .hero-text_btn {
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 139px;
+  height: 42px;
+  z-index: 2;
+  border-radius: 20px;
+  border: 1px solid var(--grey-color);
 }
   
 .home_page-section .hero-text h1 {

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import heroVideo from '../../utils/video/IMG_3003.mov';
-import heroImg from '../../utils/images/hero.png';
+// import heroImg from '../../utils/images/hero.png';
 
 import './homePage.css';
 import CountUpAnimation from './CountUpAnimation';
@@ -29,6 +29,7 @@ const HomePage = () => {
                 <div className="d-flex flex-column">
                     <h1 className="js-scroll fade-in-bottom mb-0">Real Estate For</h1>
                     <h1 className="js-scroll fade-in-bottom">True Investors</h1>
+                    <div className='hero-text_btn'><Link to="/investments" className='js-scroll fade-in-bottom'>Get Started</Link></div>
                 </div>
             </div>
         </section>
@@ -36,7 +37,7 @@ const HomePage = () => {
         <section className="container brand_info-section row my-5 py-4">
             <div className="col-md-6 col-sm-12 my-4 js-scroll slide-left count-up-trigger">
                 <article className='d-flex flex-column gap-2'>
-                    <h4>Adesina Asset stands as the premier choice for discerning investors, offering secure and high-return real estate opportunities that transcend the typical market offerings.</h4>
+                    <h4>Adesina Assets stands as the premier choice for discerning investors, offering secure and high-return real estate opportunities that transcend the typical market offerings.</h4>
                     <div className="d-flex flex-column">
                         <CountUpAnimation end={100} duration={2000} trigger={triggerCountUp} />
                         <h4>Investors</h4>
