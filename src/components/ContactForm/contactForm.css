@@ -10,7 +10,7 @@
     border-radius: 0;
     border-bottom: 1px solid var(--charcoal-color);
     background-color: var(--basic-dark);
-    padding: 4px 0px;
+    padding: 4px 2px;
     color: var(--form-placholder-color);
 }
 .contact_form-section select.form-control {

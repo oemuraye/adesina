@@ -44,8 +44,9 @@
   height: 42px;
   z-index: 2;
   border-radius: 20px;
-  border: 1px solid var(--grey-color);
-}
+  border: 2px solid var(--grey-color);
+  font-weight: bold;
+  font-size: 18px;}
   
 .home_page-section .hero-text h1 {
   color: var(--basic-white);

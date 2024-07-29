@@ -29,7 +29,7 @@ const HomePage = () => {
                 <div className="d-flex flex-column">
                     <h1 className="js-scroll fade-in-bottom mb-0">Real Estate For</h1>
                     <h1 className="js-scroll fade-in-bottom">True Investors</h1>
-                    <div className='hero-text_btn'><Link to="/investments" className='js-scroll fade-in-bottom'>Get Started</Link></div>
+                    <div className='hero-text_btn js-scroll fade-in'><Link to="/investments">Get Started</Link></div>
                 </div>
             </div>
         </section>
