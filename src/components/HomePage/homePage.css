@@ -5,11 +5,31 @@
 }
 
 /* Hero Section */
-.home_page-section .hero {
+/* .home_page-section .hero {
   position: relative;
   height: 100vh;
   overflow: hidden;
   background: var(--dark-color);
+  } */
+.home_page-section .hero {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: url(../../utils/images/hero-bg.jpg);
+  height: 100vh;
+}
+
+.home_page-section .hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000049;
+  z-index: 1;
 }
 
 .home_page-section .hero-video {

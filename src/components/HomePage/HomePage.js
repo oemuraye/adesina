@@ -21,15 +21,15 @@ const HomePage = () => {
   return (
     <main className='home_page-section'>
         <section className="hero">
-            <video autoPlay muted loop className="hero-video">
+            {/* <video autoPlay muted loop className="hero-video">
                 <source src={heroVideo} type="video/mp4" />
                 Your browser does not support the video tag.
-            </video>
+            </video> */}
             <div className='hero-text container-fluid'>
                 <div className="d-flex flex-column">
                     <h1 className="js-scroll fade-in-bottom mb-0">Real Estate For</h1>
                     <h1 className="js-scroll fade-in-bottom">True Investors</h1>
-                    <div className='hero-text_btn js-scroll fade-in'><Link to="/investments">Get Started</Link></div>
+                    <div className='hero-text_btn'><Link to="/investments">Get Started</Link></div>
                 </div>
             </div>
         </section>
